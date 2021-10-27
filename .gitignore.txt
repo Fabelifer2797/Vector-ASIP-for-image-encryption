@@ -81,8 +81,9 @@ transcript*
 sc_dpiheader.h
 vsim.dbg
 
-#ignore other files
+# ignore other files
 
 SystemVerilogCode/db/
+SystemVerilogCode/incremental_db/
 
 # End of https://www.toptal.com/developers/gitignore/api/alteraquartusii,modelsim
