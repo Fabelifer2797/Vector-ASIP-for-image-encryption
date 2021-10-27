@@ -7,4 +7,4 @@ SystemVerilogCode/incremental_db/
 *.qws
 *.json
 *.done
-*.map
+*.summary
