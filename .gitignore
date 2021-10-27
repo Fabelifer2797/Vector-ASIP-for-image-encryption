@@ -6,3 +6,5 @@ SystemVerilogCode/incremental_db/
 *.qsf
 *.qws
 *.json
+*.done
+*.map
