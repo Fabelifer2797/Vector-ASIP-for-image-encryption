@@ -1,0 +1,3 @@
+SystemVerilogCode/db/
+SystemVerilogCode/incremental_db/
+*.bak
