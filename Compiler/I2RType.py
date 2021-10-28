@@ -5,7 +5,7 @@ def CMPI():
 
 
 class I2Rtype:
-    #Switch para el caso de Lectura de IRDtype
+    #Switch para el caso de Lectura de I2Rtype
     def I2RT(n):
         switcher ={
             "CMPI": CMPI(),
