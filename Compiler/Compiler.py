@@ -1,4 +1,4 @@
-from Registros import Reg
+from Registers import Reg
 from AType import Atype
 from IRDType import IRDtype
 from F2RType import F2Rtype
@@ -16,3 +16,4 @@ print(IRDtype.IRDT("MOVI"))
 print(F2Rtype.F2RT("MOVRV"))
 print(I2Rtype.I2RT("CMPI"))
 print(F3Rtype.F3RT("SUBV"))
+
