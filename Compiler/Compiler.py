@@ -15,23 +15,40 @@ def decimalToBinary(n):
 
 #Función principal de compilador
 def compiler(texto, datos, largo):
+    listaDatos = datos
     for i in range(largo):
         instruction = ""
         print(datos[i][0])
      # Atype
         if (datos[i][0] == "JMP"):
             instruction = instruction + Atype.AT("JMP")
-            print (instruction)
+            NewAdd = (bin(((1 << 23) - 1) & 1)[2:]).zfill(23)
+            AddJ = NewAdd
+            instruction = instruction +AddJ
+            print (instruction)    
             texto.write(instruction)
             texto.write('\n')
         if (datos[i][0] == "JGT"):
             instruction = instruction + Atype.AT("JGT")
-            print (instruction)
+            address = datos[i][1]
+            contadorIndice = -1
+            for i in range(largo):
+                if(address == listaDatos[i][0]):
+                    contadorIndice = contadorIndice - i
+                if (address == datos[i][1]):
+                    contadorFinal = i
+                    contador = contadorFinal - contadorIndice
+                    NewAdd = (contadorFinal -contador -1)*-1
+                contadorIndice = contadorIndice +1
+            NewAdd = (bin(((1 << 23) - 1) & NewAdd)[2:]).zfill(23)
+            AddJ = NewAdd
+            instruction = instruction +AddJ
+            print (instruction)    
             texto.write(instruction)
             texto.write('\n')
         if (datos[i][0] == "JEQ"):
             instruction = instruction + Atype.AT("JEQ")
-            print (instruction)
+            print (instruction)    
             texto.write(instruction)
             texto.write('\n')
      # F2R type
