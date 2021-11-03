@@ -1,5 +1,6 @@
 SystemVerilogCode/db/
 SystemVerilogCode/incremental_db/
+SystemVerilogCode/simulation/
 *.bak
 *.qdf
 *.rpt
